@@ -31,7 +31,7 @@ function LoginFormContent() {
       <div className="hidden lg:flex lg:w-1/2 relative">
         <div className="absolute inset-0">
           <Image
-            src="/login-page.jpg"
+            src="https://zh.yuazhi.cn/app/penguin-query-login.jpg"
             alt="Penguin Query 登录界面"
             fill
             className="object-cover"
