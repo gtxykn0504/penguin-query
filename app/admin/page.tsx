@@ -578,27 +578,6 @@ export default function AdminDashboard() {
                 </div>
               </div>
             )}
-            {generatedLink && (
-              <div className="p-4 bg-accent/50 border border-border rounded">
-                <p className="text-xs text-muted-foreground mb-2">生成的链接：</p>
-                <div className="flex gap-2">
-                  <a href={generatedLink} target="_blank" className="text-sm text-primary hover:underline flex-1 truncate" rel="noreferrer">
-                    {generatedLink}
-                  </a>
-                  <Button
-                    type="button"
-                    size="sm"
-                    variant="outline"
-                    onClick={() => {
-                      navigator.clipboard.writeText(generatedLink)
-                      showToast("已复制到剪贴板", "success")
-                    }}
-                  >
-                    复制
-                  </Button>
-                </div>
-              </div>
-            )}
             <div className="flex justify-end gap-3">
               <Button type="button" variant="outline" onClick={() => setLinkDialog(false)} disabled={generating}>
                 取消
