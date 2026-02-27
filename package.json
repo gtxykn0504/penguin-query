@@ -5,7 +5,6 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "init-db": "node scripts/init-db.js",
     "lint": "eslint .",
     "start": "next start"
   },
